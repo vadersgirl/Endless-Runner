@@ -7,7 +7,12 @@ public class RestartButton : MonoBehaviour {
 
 	public void OnClick ()
 	{ 
-		Destroy (GameObject.FindObjectOfType<PlayerScore> ().gameObject);
+		try {
+			Destroy (GameObject.FindObjectOfType<PlayerScore> ().gameObject);
+		} catch (System.Exception ex) {
+			
+		}
+
 		UnityEngine.SceneManagement.SceneManager.LoadScene (MainScene);
 	}
 }

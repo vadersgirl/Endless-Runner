@@ -19,6 +19,9 @@ public class platformMovement : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider c)
-	{ Destroy (gameObject);
+	{ 
+		if (c.gameObject.tag != "Coin" && c.gameObject.tag != "Player"  ) {
+			Destroy (gameObject);
+		}
 	}
 }
