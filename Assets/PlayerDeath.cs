@@ -10,6 +10,7 @@ public class PlayerDeath : MonoBehaviour {
 			UnityEngine.SceneManagement.SceneManager.LoadScene (GameOverScene);
 		} else {
 			GameObject.FindObjectOfType<PlayerScore> ().Score += other.GetComponent<coinscript> ().Score;
+            other.gameObject.transform.parent = null;
 			Destroy (other.gameObject);
 		}
 	}

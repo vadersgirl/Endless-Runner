@@ -20,7 +20,7 @@ public class platformMovement : MonoBehaviour {
 
 	void OnTriggerEnter(Collider c)
 	{ 
-		if (c.gameObject.tag != "Coin" && c.gameObject.tag != "Player"  ) {
+		if (c.gameObject.tag == "Despawner") {
 			Destroy (gameObject);
 		}
 	}

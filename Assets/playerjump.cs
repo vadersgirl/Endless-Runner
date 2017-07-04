@@ -8,7 +8,9 @@ public class playerjump : MonoBehaviour {
 
 	public float jumpforce = 5;
 	Rigidbody rb;
-	bool grounded;
+	int jumps;
+    public int maxJumps = 2;
+    public GameObject Bullet, BulletNode;
 
 	// Use this for initialization
 	void Start () {
@@ -18,18 +20,20 @@ public class playerjump : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
+        if (Input.GetButtonDown("Fire1"))
+        {
+            GameObject b = Instantiate<GameObject>(Bullet);
+            b.transform.position = BulletNode.transform.position;
+        }
 
-		if (Input.GetButtonDown ("Jump")&& grounded) {
+		if ((CrossPlatformInputManager.GetButtonDown("Jump") || Input.GetButtonDown ("Jump"))&& jumps<maxJumps) {
 			rb.AddForce (new Vector3 (0, jumpforce, 0), ForceMode.Impulse);
-			grounded = false;
+			jumps++;
 		}
-		if (CrossPlatformInputManager.GetButtonDown ("Jump") && grounded) {
-			rb.AddForce (new Vector3 (0, jumpforce, 0), ForceMode.Impulse);
-			grounded = false;
-		}
+
 	}
 	void OnCollisionEnter(Collision c) {
-		grounded = true;
+        jumps = 0;
 	}
 }
 	
