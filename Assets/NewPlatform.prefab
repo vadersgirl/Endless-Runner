@@ -23,7 +23,8 @@ GameObject:
   - component: {fileID: 65179975540987212}
   - component: {fileID: 23049022494002532}
   - component: {fileID: 114014899396592010}
-  m_Layer: 0
+  - component: {fileID: 114458314165146756}
+  m_Layer: 11
   m_Name: Coin
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -194,6 +195,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Score: 10
+  coinParticles: {fileID: 1326660235673682, guid: 900b8db051c847e4daac32c219da5350,
+    type: 2}
 --- !u!114 &114168918877331200
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -206,6 +209,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+--- !u!114 &114458314165146756
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1211945909668982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dbf470312869f2408e3a24862ff90a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  desiredScale: {x: 1, y: 1, z: 1}
 --- !u!136 &136029877910563028
 CapsuleCollider:
   m_ObjectHideFlags: 1

@@ -4,12 +4,19 @@ using UnityEngine;
 
 public class PlayerDeath : MonoBehaviour {
 	public string GameOverScene;
+    
 	void OnTriggerEnter(Collider other){ 
 		if (other.gameObject.tag != "Coin") {
 			GameObject.FindObjectOfType<PlayerScore> ().AccumulatingScore = false;
 			UnityEngine.SceneManagement.SceneManager.LoadScene (GameOverScene);
 		} else {
-			GameObject.FindObjectOfType<PlayerScore> ().Score += other.GetComponent<coinscript> ().Score;
+            coinscript c = other.GetComponent<coinscript>();
+            GameObject particles = Instantiate<GameObject>(c.coinParticles);
+            particles.transform.position = other.transform.position;
+            particles.transform.rotation = Quaternion.Euler(Vector3.zero);
+            particles.transform.parent = other.transform.parent;
+            particles.transform.localScale = Vector3.one ;
+            GameObject.FindObjectOfType<PlayerScore> ().Score += c.Score;
             other.gameObject.transform.parent = null;
 			Destroy (other.gameObject);
 		}

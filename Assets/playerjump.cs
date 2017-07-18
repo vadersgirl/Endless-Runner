@@ -10,7 +10,7 @@ public class playerjump : MonoBehaviour {
 	Rigidbody rb;
 	int jumps;
     public int maxJumps = 2;
-    public GameObject Bullet, BulletNode;
+    public GameObject Bullet, BulletNode, groundParticles;
 
 	// Use this for initialization
 	void Start () {
@@ -33,6 +33,10 @@ public class playerjump : MonoBehaviour {
 
 	}
 	void OnCollisionEnter(Collision c) {
+        GameObject g = Instantiate<GameObject>(groundParticles);
+        g.transform.position = c.contacts[0].point;
+        g.transform.localScale = c.transform.localScale;
+        g.transform.parent = c.transform;
         jumps = 0;
 	}
 }
