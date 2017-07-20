@@ -308,6 +308,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Score: 10
+  coinParticles: {fileID: 0}
 --- !u!114 &114743714890671090
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -320,6 +321,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Score: 10
+  coinParticles: {fileID: 0}
 --- !u!136 &136737037438707964
 CapsuleCollider:
   m_ObjectHideFlags: 1
