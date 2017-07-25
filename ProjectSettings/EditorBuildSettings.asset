@@ -6,8 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/endless runner.unity
+    path: Assets/Scenes/endless runner.unity
     guid: 9757072b8fff3854a8e14fe8e6a0e5a9
   - enabled: 1
-    path: Assets/GameOver.unity
+    path: Assets/Scenes/GameOver.unity
     guid: 332959ce53aff594492a47b4c9767ce2
+  - enabled: 1
+    path: Assets/Scenes/Main Menu.unity
+    guid: 618275d0b43f53d49b86f33c531cddbe
