@@ -187,7 +187,7 @@ Transform:
   m_GameObject: {fileID: 126076044}
   m_LocalRotation: {x: 0, y: 0.7071068, z: -0.7071068, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 111.9}
-  m_LocalScale: {x: 15, y: 15, z: 15}
+  m_LocalScale: {x: 30, y: 30, z: 30}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -227,7 +227,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 311, y: -347}
+  m_AnchoredPosition: {x: 311, y: -308}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &174792002
@@ -772,9 +772,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Controls: Tap screen to jump\nMission: Last as long as you can\n while
-    collecting as many coins\n as you can to get the highest score \npossible. Don't
-    fall off the train! \n"
+  m_Text: "Controls: Tap left of screen to Jump - tap twice quickly for double jump\nTap
+    right of screen to shoot\n\nMission: Last as long as you can\n while collecting
+    as much money\n as you can to get the highest score \npossible. \nDon't fall off
+    the train! \n"
 --- !u!222 &649764934
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1079,7 +1080,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -151, y: 40}
+  m_AnchoredPosition: {x: -151, y: 16}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1132744398
