@@ -1,62 +1,47 @@
 fileFormatVersion: 2
-guid: 4eb8789653c0aae49aff3888dfdfb654
-timeCreated: 1501069157
+guid: c1aa9f6d4941d9a448470c887d4b110c
+timeCreated: 1502767690
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: Cylinder002
-    100002: Object001
-    100004: Object002
-    100006: Object003
-    100008: Object004
-    100010: Object005
-    100012: Object006
-    100014: Object008
-    100016: Point001
-    100018: Point002
-    100020: Point003
-    100022: Point004
-    100024: //RootNode
-    400000: Cylinder002
-    400002: Object001
-    400004: Object002
-    400006: Object003
-    400008: Object004
-    400010: Object005
-    400012: Object006
-    400014: Object008
-    400016: Point001
-    400018: Point002
-    400020: Point003
-    400022: Point004
-    400024: //RootNode
-    2300000: Cylinder002
-    2300002: Object001
-    2300004: Object002
-    2300006: Object003
-    2300008: Object004
-    2300010: Object005
-    2300012: Object006
-    2300014: Object008
-    3300000: Cylinder002
-    3300002: Object001
-    3300004: Object002
-    3300006: Object003
-    3300008: Object004
-    3300010: Object005
-    3300012: Object006
-    3300014: Object008
-    4300000: Cylinder002
-    4300002: Object002
-    4300004: Object004
-    4300006: Object006
-    4300008: Object008
-    4300010: Object001
-    4300012: Object005
-    4300014: Object003
-    7400000: Take 001
-    9500000: //RootNode
+    100000: Cube
+    100002: Cube.001
+    100004: Cube.002
+    100006: Cylinder
+    100008: Cylinder.001
+    100010: Cylinder.002
+    100012: Cylinder.003
+    100014: //RootNode
+    400000: Cube
+    400002: Cube.001
+    400004: Cube.002
+    400006: Cylinder
+    400008: Cylinder.001
+    400010: Cylinder.002
+    400012: Cylinder.003
+    400014: //RootNode
+    2300000: Cube
+    2300002: Cube.001
+    2300004: Cube.002
+    2300006: Cylinder
+    2300008: Cylinder.001
+    2300010: Cylinder.002
+    2300012: Cylinder.003
+    3300000: Cube
+    3300002: Cube.001
+    3300004: Cube.002
+    3300006: Cylinder
+    3300008: Cylinder.001
+    3300010: Cylinder.002
+    3300012: Cylinder.003
+    4300000: Cube.001
+    4300002: Cylinder
+    4300004: Cube
+    4300006: Cylinder.001
+    4300008: Cylinder.002
+    4300010: Cylinder.003
+    4300012: Cube.002
   materials:
     importMaterials: 1
     materialName: 0
@@ -83,7 +68,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 0.01
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
@@ -121,7 +106,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

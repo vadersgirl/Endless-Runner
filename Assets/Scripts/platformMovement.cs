@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class platformMovement : MonoBehaviour {
-	public float speed = 2; 
+	public float speed = 1; 
 	Rigidbody rb;
 	// Use this for initialization
 	void Start () {

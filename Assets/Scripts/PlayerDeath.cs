@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerDeath : MonoBehaviour {
 	public string GameOverScene;
-    
+	public AudioSource coinSE;
 	void OnTriggerEnter(Collider other){ 
 		if (other.gameObject.tag != "Coin") {
 			GameObject.FindObjectOfType<PlayerScore> ().AccumulatingScore = false;
@@ -18,6 +18,7 @@ public class PlayerDeath : MonoBehaviour {
             particles.transform.localScale = Vector3.one ;
             GameObject.FindObjectOfType<PlayerScore> ().Score += c.Score;
             other.gameObject.transform.parent = null;
+			coinSE.Play ();
 			Destroy (other.gameObject);
 		}
 	}

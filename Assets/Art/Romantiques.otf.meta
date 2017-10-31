@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 51ffa9d8a155c3146862c9ae816c495a
+timeCreated: 1501422045
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Romantiques
+  fontNames:
+  - Romantiques
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -11,7 +11,8 @@ public class playerjump : MonoBehaviour {
 	int jumps;
     public int maxJumps = 2;
     public GameObject Bullet, BulletNode, groundParticles;
-
+	public AudioSource jumpSound;
+	public AudioSource bulletSound;
 	// Use this for initialization
 	void Start () {
 		rb = GetComponent<Rigidbody> ();
@@ -19,16 +20,18 @@ public class playerjump : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
-        if (Input.GetButtonDown("Fire1"))
-        {
-            GameObject b = Instantiate<GameObject>(Bullet);
-            b.transform.position = BulletNode.transform.position;
-        }
+		if (Time.timeScale > 0) {
+			if (Input.GetButtonDown ("Fire1")) {
+				GameObject b = Instantiate<GameObject> (Bullet);
+				b.transform.position = BulletNode.transform.position;
+				bulletSound.Play ();
+			}
 
-		if ((CrossPlatformInputManager.GetButtonDown("Jump") || Input.GetButtonDown ("Jump"))&& jumps<maxJumps) {
-			rb.AddForce (new Vector3 (0, jumpforce, 0), ForceMode.Impulse);
-			jumps++;
+			if ((CrossPlatformInputManager.GetButtonDown ("Jump") || Input.GetButtonDown ("Jump")) && jumps < maxJumps) {
+				rb.AddForce (new Vector3 (0, jumpforce, 0), ForceMode.Impulse);
+				jumps++;
+				jumpSound.Play ();
+			}
 		}
 
 	}
